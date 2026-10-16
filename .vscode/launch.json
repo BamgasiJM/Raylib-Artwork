@@ -1,0 +1,43 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/Debug/raylib-art",
+      "cwd": "${workspaceFolder}",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "windows": {
+        "program": "${workspaceFolder}/bin/Debug/raylib-art.exe",
+        "miDebuggerPath": "${workspaceFolder}/tools/w64devkit/bin/gdb.exe",
+        "environment": [{ "name": "PATH", "value": "${workspaceFolder}/tools/w64devkit/bin;${env:PATH}" }]
+      },
+      "osx": { "MIMode": "lldb" },
+      "linux": { "miDebuggerPath": "/usr/bin/gdb" },
+      "setupCommands": [{ "text": "-enable-pretty-printing", "ignoreFailures": true }],
+      "preLaunchTask": "build debug"
+    },
+    {
+      "name": "Run Release",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/Release/raylib-art",
+      "cwd": "${workspaceFolder}",
+      "args": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "windows": {
+        "program": "${workspaceFolder}/bin/Release/raylib-art.exe",
+        "miDebuggerPath": "${workspaceFolder}/tools/w64devkit/bin/gdb.exe",
+        "environment": [{ "name": "PATH", "value": "${workspaceFolder}/tools/w64devkit/bin;${env:PATH}" }]
+      },
+      "osx": { "MIMode": "lldb" },
+      "linux": { "miDebuggerPath": "/usr/bin/gdb" },
+      "preLaunchTask": "build release"
+    }
+  ]
+}

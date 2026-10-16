@@ -1,0 +1,76 @@
+# Generated build files and executables (the root Makefile is source-controlled).
+/build/
+/bin/
+/obj/
+/build_files/
+/compile_commands.json
+/raylib-art.make
+/raylib.make
+
+# Local Windows compiler/debugger distribution. Restore separately after cloning.
+/tools/w64devkit/
+
+# Compiled C/C++ artifacts. Do not ignore *.obj: it is also a 3D model format.
+*.o
+*.a
+*.lib
+*.dll
+*.exe
+*.so
+*.so.*
+*.dylib
+*.wasm
+*.pdb
+*.ilk
+*.pch
+*.gch
+*.idb
+*.ipdb
+*.iobj
+*.tlog
+
+# Premake is a required, bundled build tool.
+!/tools/premake/premake5.exe
+
+# Generated Visual Studio projects at the project root.
+/*.sln
+/*.slnx
+/*.vcxproj
+/*.vcxproj.filters
+/.vs/
+ipch/
+*.user
+*.suo
+*.VC.db
+*.VC.VC.opendb
+
+# Share the VS Code build/debug/IntelliSense settings, omit personal settings.
+/.vscode/*
+!/.vscode/settings.json
+!/.vscode/tasks.json
+!/.vscode/launch.json
+!/.vscode/extensions.json
+!/.vscode/c_cpp_properties.json
+*.code-workspace
+/.idea/
+/.cache/
+/.history/
+/.localhistory/
+
+# Logs, editor backups, and operating-system metadata.
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+._.*
+Thumbs.db
+Desktop.ini
+
+# Local environment configuration; keep distributable examples.
+.env
+.env.*
+!.env.example
+!.env.sample
